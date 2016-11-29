@@ -1,0 +1,400 @@
+/* line 5, ../sass/home.scss */
+#home-overflow {
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+  min-height: 700px;
+}
+@media only screen and (max-width: 64.063em) {
+  /* line 5, ../sass/home.scss */
+  #home-overflow {
+    overflow: visible;
+    min-height: initial;
+    height: initial;
+  }
+}
+
+/* line 16, ../sass/home.scss */
+.overflow-container {
+  position: relative;
+  height: 80%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 16, ../sass/home.scss */
+  .overflow-container {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+  }
+}
+
+/* line 25, ../sass/home.scss */
+.headline-container {
+  position: absolute;
+  height: 300px;
+  /* margin: auto; */
+  top: 25%;
+  /* bottom: 0; */
+  left: 10%;
+  max-width: 1200px;
+  margin: auto;
+  right: 0;
+}
+/* line 35, ../sass/home.scss */
+.headline-container h3 {
+  color: #fff;
+  text-shadow: 3px 3px 3px #333;
+  font-size: 4.2em;
+  padding: 0;
+  margin: 16px 0;
+  font-family: 'Oswald', sans-serif;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 25, ../sass/home.scss */
+  .headline-container {
+    order: 2;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 220px;
+    text-align: center;
+  }
+  /* line 52, ../sass/home.scss */
+  .headline-container h3 {
+    font-size: 38px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/* line 59, ../sass/home.scss */
+.venue {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 59, ../sass/home.scss */
+  .venue {
+    font-size: 18px;
+  }
+}
+
+/* line 69, ../sass/home.scss */
+.home-find-tickets {
+  border: solid 3px #fff;
+  background: #d00;
+  display: block;
+  width: 214px;
+  font-size: 24px;
+  text-align: center;
+  padding: 13px;
+  color: #fff;
+  margin: 28px 0;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 69, ../sass/home.scss */
+  .home-find-tickets {
+    font-size: 16px;
+    margin: 16px auto;
+    padding: 8px;
+    width: 160px;
+  }
+}
+
+/* line 87, ../sass/home.scss */
+.img-container img {
+  width: 100%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 86, ../sass/home.scss */
+  .img-container {
+    order: 1;
+  }
+}
+
+/* For when at top scroll
+#home-overflow {
+    // height: 90%;
+    overflow: hidden;
+    // position: relative;
+    min-height: 700px;
+}*/
+/* line 101, ../sass/home.scss */
+.home {
+  position: absolute;
+  background: rgba(34, 34, 34, 0.85);
+  z-index: 101;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 101, ../sass/home.scss */
+  .home {
+    position: relative;
+  }
+}
+
+/* line 109, ../sass/home.scss */
+.bottom-home-bar {
+  height: 160px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  border-top: solid 2px #525d64;
+  border-bottom: solid 2px #525d64;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 109, ../sass/home.scss */
+  .bottom-home-bar {
+    position: relative;
+    height: initial;
+    overflow-x: scroll;
+    padding: 6px 0;
+  }
+}
+@media only screen and (max-width: 64.063em) {
+  /* line 109, ../sass/home.scss */
+  .bottom-home-bar {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: relative;
+  }
+}
+
+/* For use when at top scroll
+
+    .bottom-home-bar {
+        height: 160px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        border-top: solid 2px #525d64;
+        border-bottom: solid 2px #525d64;
+    }
+
+
+
+*/
+/* line 145, ../sass/home.scss */
+.bottom-home-bar-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1285px;
+  margin: 0 auto;
+  align-items: stretch;
+  height: 100%;
+}
+/* line 158, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  margin: 6px;
+}
+/* line 167, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column a {
+  display: block;
+  color: #fff;
+}
+/* line 170, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column a span {
+  display: block;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 158, ../sass/home.scss */
+  .bottom-home-bar-row .bottom-column {
+    margin: 4px;
+  }
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 145, ../sass/home.scss */
+  .bottom-home-bar-row {
+    width: 240%;
+    overflow-x: scroll;
+  }
+}
+
+/* line 184, ../sass/home.scss */
+.below-fold-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  width: 100%;
+  max-width: 1285px;
+  margin: 30px auto;
+}
+/* line 194, ../sass/home.scss */
+.below-fold-container .column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  ms-flex: 1;
+  flex: 1;
+  margin: 8px;
+  padding: 0;
+  border: solid 1px #dedede;
+  border-left: solid 4px #dedede;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 194, ../sass/home.scss */
+  .below-fold-container .column {
+    margin: 4px;
+  }
+}
+/* line 208, ../sass/home.scss */
+.below-fold-container .heading {
+  text-align: left;
+  font-size: 1.25em;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid 1px #dedede;
+  padding: 12px 5px 12px;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 208, ../sass/home.scss */
+  .below-fold-container .heading {
+    padding: 12px 15px 12px;
+  }
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 184, ../sass/home.scss */
+  .below-fold-container {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+}
+
+/* line 225, ../sass/home.scss */
+.label-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: solid 1px #dedede;
+}
+/* line 236, ../sass/home.scss */
+.label-flex .flex-day,
+.label-flex .flex-event {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  ms-flex: 1;
+  flex: 1;
+}
+
+/* line 245, ../sass/home.scss */
+.label-flex:last-of-type {
+  border-bottom: none;
+}
+
+/* line 248, ../sass/home.scss */
+.flex-day {
+  max-width: 135px;
+  border-right: solid 1px #dedede;
+  color: #666;
+  background-color: #f7f7f7;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 248, ../sass/home.scss */
+  .flex-day {
+    max-width: 90px;
+  }
+}
+
+/* line 259, ../sass/home.scss */
+.new-faux-table {
+  display: table;
+  width: 100% !important;
+  min-height: 100px;
+}
+
+/* line 264, ../sass/home.scss */
+.new-faux-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 268, ../sass/home.scss */
+span.day-checkout {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 275, ../sass/home.scss */
+span.month-checkout {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+/* line 280, ../sass/home.scss */
+.flex-event {
+  min-width: 320px;
+  max-width: 500px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 280, ../sass/home.scss */
+  .flex-event {
+    min-width: inherit;
+    max-width: inherit;
+  }
+}
+/* line 292, ../sass/home.scss */
+.flex-event span {
+  display: block;
+  text-transform: uppercase;
+  color: #333;
+}
+/* line 297, ../sass/home.scss */
+.flex-event .event-name {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+/* line 301, ../sass/home.scss */
+.flex-event .event-details {
+  font-weight: 300;
+  color: #777;
+}
+/* line 304, ../sass/home.scss */
+.flex-event .event-details a {
+  color: #d00;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 301, ../sass/home.scss */
+  .flex-event .event-details {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,58 @@
+<nav role="navigation" class="mobile-nav">
+  <label for="show-menu" class="nav__open-button">Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul class="menu">
+		<li>
+			<div>
+				<label for="show-menu" class="show-menu close-menu">
+					<input type="checkbox" id="show-menu" role="button">
+					<div class="nav__close-button">Close</span>
+				</label>
+			</div>
+		</li>
+    <li><a href="{{ "/" | prepend: site.baseurl }}">Bio</a></li>
+    <li><a href="{{ "/designs/" | prepend: site.baseurl }}">Design</a></li>
+    <li><a href="{{ "/code-snippets/" | prepend: site.baseurl }}">Snippets</a></li>
+    <!--<li><a href="{{ "/notes/" | prepend: site.baseurl }}">Notes</a></li>-->
+    <li class="contact">
+      knottaverage[@]gmail.com<br>707-494-1384
+    </li>
+  </ul>
+</nav>
+
+<!--
+<nav class="nav clear" role="navigation">
+	<div class="logo-container">
+		<a href="/"><span class="logo-container__bold">Knottaverage's</span> pixels and pencils.</a>
+	</div>
+  <label for="show-menu" class="nav__open-button">
+		Menu
+	</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <div class="menu">
+    <ul class="menubar">
+			<li>
+        <div>
+          <label for="show-menu" class="show-menu close-menu">
+						<input type="checkbox" id="show-menu" role="button">
+						<div class="nav__close-button">Close</span>
+					</label>
+        </div>
+      </li>
+			<li>
+				<a href="{{ "/" | prepend: site.baseurl }}">Bio</a></li>
+			</li>
+			<li>
+				<a href="{{ "/designs/" | prepend: site.baseurl }}">Design</a></li>
+			</li>
+			<li>
+				<a href="{{ "/code-snippets/" | prepend: site.baseurl }}">Snippets</a></li>
+			</li>
+			<li>
+				<a href="{{ "/notes/" | prepend: site.baseurl }}">Notes</a>
+			</li>
+			<li class="mobile-contact">knottaverage@gmail.com<br>707-494-1384</li>
+    </ul>
+  </div>
+</nav>
+-->

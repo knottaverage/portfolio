@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untitled Document</title>
+
+  <link rel="stylesheet" href="stylesheets/ace.default.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,900,900italic,500,500italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/header.css" type="text/css" />
+  <link rel="stylesheet" href="stylesheets/ace.event.css" type="text/css" />
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+  <script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.slide.js"></script>
+  <style>
+    .home {
+      position: relative !important;
+    }
+  </style>
+</head>
+  <body>
+    <!-- Header -->
+    <header class="home">
+        <div id="black-bar"></div>
+        <div class="row header-container">
+          <div class="header-col-1 header-col-generic">
+            <!-- Logo Container -->
+            <a href="index.html"><img src="img/logo.svg" alt="Ace Ticket" class="shadow" border="0"></a>
+          </div>
+          <div class="header-col-2 header-col-generic">
+            <!-- Search Container -->
+            <div id="search-container">
+              <div class="col-1">
+                <div class="table">
+                  <div class="td m"><i class="material-icons location-icon">location_on</i></div>
+                  <div class="td m">Location: <b>Boston</b></div>
+                  <div class="td m"><i class="material-icons location-arrow">arrow_drop_down</i></div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div>
+                  <i class="material-icons mag-glass">search</i>
+                  <input type="text" placeholder="Enter Team, Event or Venue" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-col-3 header-col-generic">
+            <!-- Menu Container -->
+            <div id="menu-container">
+              <nav class="nav clear" role="navigation">
+                  <label for="show-menu" class="show-menu hamburger-menu">
+                    <span class="img-fill">
+                      <i class="material-icons menu-position hamburger">menu</i>
+                      <i class="material-icons menu-position keyboard">close</i>
+                    </span>
+                  </label>
+                  <input type="checkbox" class="menu-checkbox" id="show-menu" role="button">
+                  <div class="menubar">
+                    <!--<div id="close-it">
+                      <label for="show-menu" class="show-menu close-menu"><i class="material-icons close-position">cancel</i></label>
+                      <input type="checkbox" id="show-menu" role="button">
+                    </div>-->
+                    <ul id="subnav">
+                      <li><a href="#"><i class="material-icons icon">phone</i><span>1-617-586-1403</span></a></li>
+                      <li><a href="#"><i class="material-icons icon">store</i><span>Store Locations</span></a></li>
+                      <li><a href="#"><i class="material-icons icon">account_circle</i><span>Account</span></a></li>
+                      <li><a href="#"><i class="material-icons icon">local_activity</i><span>Sell</span></a></li>
+                      <li><a href="#"><i class="material-icons icon">shopping_cart</i><span>Cart</span></a></li>
+                       <li id="menu-spacer"></li>
+                    </ul>
+                    <ul id="main-nav">
+                        <li class="flexit">
+                          <a href="event.html" class="top-link">
+                            <i class="material-icons icon">phone</i><span>MLB</span>
+                          </a>
+                          <ul class="hidden left">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html" >Arizona Diamondbacks</a>
+                                <a href="event.html" >Atlanta Braves</a>
+                                <a href="event.html" >Baltimore Orioles</a>
+                                <a href="event.html" >Boston Red Sox</a>
+                                <a href="event.html" >Chicago Cubs</a>
+                                <a href="event.html" >Chicago White Sox</a>
+                                <a href="event.html" >Cincinnati Reds</a>
+                                <a href="event.html" >Cleveland Indians</a>
+                                <a href="event.html" >Colorado Rockies</a>
+                                <a href="event.html" >Detroit Tigers</a>
+                                <a href="event.html" >Milwaukee Brewers</a>
+                                <a href="event.html" >Houston Astros</a>
+                                <a href="event.html" >Kansas City Royals</a>
+                                <a href="event.html" >Los Angeles Angels</a>
+                                <a href="event.html" >Los Angeles Dodgers</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Miami Marlins</a>
+                                <a href="event.html">Minnesota Twins</a>
+                                <a href="event.html">New York Mets</a>
+                                <a href="event.html">New York Yankees</a>
+                                <a href="event.html">Oakland Athletics</a>
+                                <a href="event.html">Philadelphia Phillies</a>
+                                <a href="event.html">Pittsburgh Pirates</a>
+                                <a href="event.html">San Diego Padres</a>
+                                <a href="event.html">San Francisco Giants</a>
+                                <a href="event.html">Seattle Mariners</a>
+                                <a href="event.html">St Louis Cardinals</a>
+                                <a href="event.html">Tampa Bay Rays</a>
+                                <a href="event.html">Texas Rangers</a>
+                                <a href="event.html">Toronto Blue Jays</a>
+                                <a href="event.html">Washington Nationals</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="flexit">
+                          <a href="#" class="top-link"><i class="material-icons icon">phone</i><span>NBA</span></a>
+                          <ul class="hidden left">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html">Atlanta Hawks</a>
+                                <a href="event.html">Brooklyn Nets</a>
+                                <a href="event.html">Boston Celtics</a>
+                                <a href="event.html">Charlotte Bobcats</a>
+                                <a href="event.html">Chicago Bulls</a>
+                                <a href="event.html">Cleveland Cavaliers</a>
+                                <a href="event.html">Dallas Mavericks</a>
+                                <a href="event.html">Denver Nuggets</a>
+                                <a href="event.html">Detroit Pistons</a>
+                                <a href="event.html">Golden State Warriors</a>
+                                <a href="event.html">Houston Rockets</a>
+                                <a href="event.html">Indiana Pacers</a>
+                                <a href="event.html">Los Angeles Clippers</a>
+                                <a href="event.html">Los Angeles Lakers</a>
+                                <a href="event.html">Miami Heat</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Memphis Grizzlies</a>
+                                <a href="event.html">Milwaukee Bucks</a>
+                                <a href="event.html">Minnesota Timberwolves</a>
+                                <a href="event.html">New Orleans Pelicans</a>
+                                <a href="event.html">New York Knicks</a>
+                                <a href="event.html">Oklahoma City Thunder</a>
+                                <a href="event.html">Orlando Magic</a>
+                                <a href="event.html">Philadelphia 76ers</a>
+                                <a href="event.html">Phoenix Suns</a>
+                                <a href="event.html">Portland Trail Blazers</a>
+                                <a href="event.html">Sacramento Kings</a>
+                                <a href="event.html">San Antonio Spurs</a>
+                                <a href="event.html">Toronto Raptors</a>
+                                <a href="event.html">Washington Wizards</a>
+                                <a href="event.html">Utah Jazz</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="flexit">
+                          <a href="#" class="top-link"><i class="material-icons icon">phone</i><span>NHL</span></a>
+                          <ul class="hidden left">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html">Anaheim Ducks</a>
+                                <a href="event.html">Boston Bruins</a>
+                                <a href="event.html">Buffalo Sabres</a>
+                                <a href="event.html">Calgary Flames</a>
+                                <a href="event.html">Carolina Hurricanes</a>
+                                <a href="event.html">Chicago Blackhawks</a>
+                                <a href="event.html">Colorado Avalanche</a>
+                                <a href="event.html">Columbus Blue Jackets</a>
+                                <a href="event.html">Dallas Stars</a>
+                                <a href="event.html">Detroit Red Wings</a>
+                                <a href="event.html">Edmonton Oilers</a>
+                                <a href="event.html">Florida Panthers</a>
+                                <a href="event.html">Los Angeles Kings</a>
+                                <a href="event.html">Minnesota Wild</a>
+                                <a href="event.html">Montreal Canadiens</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Nashville Predators</a>
+                                <a href="event.html">New Jersey Devils</a>
+                                <a href="event.html">New York Islanders</a>
+                                <a href="event.html">New York Rangers</a>
+                                <a href="event.html">Ottawa Senators</a>
+                                <a href="event.html">Philadelphia Flyers</a>
+                                <a href="event.html">Phoenix Coyotes</a>
+                                <a href="event.html">Pittsburgh Penguins</a>
+                                <a href="event.html">San Jose Sharks</a>
+                                <a href="event.html">St Louis Blues</a>
+                                <a href="event.html">Tampa Bay Lightning</a>
+                                <a href="event.html">Toronto Maple Leafs</a>
+                                <a href="event.html">Washington Capitals</a>
+                                <a href="event.html">Winnipeg Jets</a>
+                                <a href="event.html">Vancouver Canucks</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="flexit">
+                          <a href="#" class="top-link"><i class="material-icons icon">phone</i><span>NFL</span></a>
+                          <ul class="hidden right">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html">Arizona Cardinals</a>
+                                <a href="event.html">Atlanta Falcons</a>
+                                <a href="event.html">Baltimore Ravens</a>
+                                <a href="event.html">Buffalo Bills</a>
+                                <a href="event.html">Carolina Panthers</a>
+                                <a href="event.html">Chicago Bears</a>
+                                <a href="event.html">Cincinnati Bengals</a>
+                                <a href="event.html">Cleveland Browns</a>
+                                <a href="event.html">Dallas Cowboys</a>
+                                <a href="event.html">Denver Broncos</a>
+                                <a href="event.html">Detroit Lions</a>
+                                <a href="event.html">Green Bay Packers</a>
+                                <a href="event.html">Houston Texans</a>
+                                <a href="event.html">Indianapolis Colts</a>
+                                <a href="event.html">Jacksonville Jaguars</a>
+                                <a href="event.html">Kansas City Chiefs</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Memphis Grizzlies</a>
+                                <a href="event.html">Milwaukee Bucks</a>
+                                <a href="event.html">Minnesota Timberwolves</a>
+                                <a href="event.html">New Orleans Pelicans</a>
+                                <a href="event.html">New York Knicks</a>
+                                <a href="event.html">Oklahoma City Thunder</a>
+                                <a href="event.html">Orlando Magic</a>
+                                <a href="event.html">Philadelphia 76ers</a>
+                                <a href="event.html">Phoenix Suns</a>
+                                <a href="event.html">Portland Trail Blazers</a>
+                                <a href="event.html">Sacramento Kings</a>
+                                <a href="event.html">San Antonio Spurs</a>
+                                <a href="event.html">Toronto Raptors</a>
+                                <a href="event.html">Washington Wizards</a>
+                                <a href="event.html">Utah Jazz</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="flexit">
+                          <a href="#" class="top-link"><i class="material-icons icon">phone</i><span>Concerts</span></a>
+                          <ul class="hidden right">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html">Selena Gomez</a>
+                                <a href="event.html">The 1975</a>
+                                <a href="event.html">The Arcs</a>
+                                <a href="event.html">Vance Joy</a>
+                                <a href="event.html">Janet Jackson</a>
+                                <a href="event.html">Art Garfunkel</a>
+                                <a href="event.html">The Who</a>
+                                <a href="event.html">Charles Kelley</a>
+                                <a href="event.html">My Morning Jacket</a>
+                                <a href="event.html">Joe Jackson</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Marc Anthony</a>
+                                <a href="event.html">Ringo Starr</a>
+                                <a href="event.html">Joe Walsh</a>
+                                <a href="event.html">Marina and the Diamonds</a>
+                                <a href="event.html">Grace Potter</a>
+                                <a href="event.html">The Weeknd</a>
+                                <a href="event.html">Jethro Tull</a>
+                                <a href="event.html">Frankie Valli</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="flexit">
+                          <a href="#" class="top-link"><i class="material-icons icon">phone</i><span>Theatre</span></a>
+                          <ul class="hidden right">
+                            <div class="drop-menu">
+                              <div>
+                                <a href="event.html">Beautiful</a>
+                                <a href="event.html">The Sound of Music</a>
+                                <a href="event.html">Elf the Musical</a>
+                                <a href="event.html">Cinderella</a>
+                                <a href="event.html">The Wizard of Oz</a>
+                                <a href="event.html">A Confederacy of Dunces</a>
+                                <a href="event.html">Rudolph the Red Nosed Reindeer</a>
+                              </div>
+                              <div>
+                                <a href="event.html">Pippin</a>
+                                <a href="event.html">Matilda</a>
+                                <a href="event.html">Holiday Pops</a>
+                                <a href="event.html">Nutcracker</a>
+                                <a href="event.html">Blue Man Group</a>
+                                <a href="event.html">Wicked</a>
+                                <a href="event.html">Book of Mormon</a>
+                                <a href="event.html">Lion King</a>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+                      </ul>
+                  </div>
+                </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- Hero Image -->
+    <div class="event-wrapper">
+      <div class="social-container">
+
+      </div>
+      <div class="event-label-container">
+        <div class="col-1">
+          <div class="label-flex">
+            <div class="flex-day">
+              <div class="new-faux-table">
+                  <div class="new-faux-cell">
+                      <span class="day-checkout">
+                          Mon
+                      </span>
+                      <span class="month-checkout">
+                          Dec 21<br>7:30 PM
+                      </span>
+                       <span class="value-title date dtstart" title="2015-12-21T19:30:00+00:00" style="display:none;">12-21-2015</span>
+                  </div>
+              </div>
+            </div>
+            <div class="flex-event">
+              <!-- Event Info -->
+              <div class="new-faux-table">
+                  <div class="new-faux-cell">
+                      <span class="event-name">Boston Celtics vs Minnesota Timberwolves</span>
+                      <span class="event-details">AT THE <a href="#">TD GARDEN</a> - BOSTON, MA</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="free-and-easy">
+            <p>Free and Easy Pick-Up at our TD Garden Store</p>
+            <span><b>All Prices Are Per Ticket.</b> Seat numbers are not always listed.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Map and Listings Container -->
+      <div class="map-wrapper">
+        <!-- Listings Container -->
+        <div class="ticket-container">
+          <div class="filter-container">
+            <div class="compare-container">
+              <button class="compare-button">Compare</button>
+            </div>
+            <div class="qty-container">
+              <label>QTY</label>
+              <select>
+                <option>Any</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="max-price-container">
+              <div class="max-price-input">
+                <span>$</span>
+                <input type="text" placeholder="Set Max Price"/>
+              </div>
+            </div>
+          </div>
+          <div class="filter-listings-buttons">
+            <div class="checkbox"></div>
+            <button class="sort-btn sort-section" id="section-asc"><span>Section</span><span><i class="material-icons">keyboard_arrow_down</i></span></button>
+            <button class="sort-btn sort-section" id="section-desc"><span>Section</span><span><i class="material-icons">keyboard_arrow_up</i></span></button>
+            <button class="sort-btn sort-qty" id="qty-asc"><span>Qty</span><span><i class="material-icons">keyboard_arrow_down</i></span></button>
+            <button class="sort-btn sort-qty" id="qty-desc"><span>Qty</span><span><i class="material-icons">keyboard_arrow_up</i></span></button>
+            <button class="sort-btn sort-price sort-selected" id="price-asc"><span>Price</span><span><i class="material-icons">keyboard_arrow_down</i></span></button>
+            <button class="sort-btn sort-price sort-selected" id="price-desc"><span>Price</span><span><i class="material-icons">keyboard_arrow_up</i></span></button>
+          </div>
+          <ul id="productList">
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Bal302</a><br>
+                      <span>Row 1 | Seats : 20-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$123</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Loge9</a><br>
+                      <span>Row 2 | Seats : 22-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option >3</option>
+                        <option >4</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$3,210.45</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Loge7</a><br>
+                      <span>Row AA | Seats : 45-101</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$235,540</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Bal309</a><br>
+                      <span>Row 1 | Seats : 22-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$945</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Bal302</a><br>
+                      <span>Row 1 | Seats : 20-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$123</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Bal302</a><br>
+                      <span>Row 1 | Seats : 20-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$123</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Bal302</a><br>
+                      <span>Row 1 | Seats : 20-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$123</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="productContainer">
+              <li>
+                <div class="checkbox">
+                  <input type="checkbox" name="" value="">
+                </div>
+                <div class="productInfo">
+                  <!-- SORT ALL DIVS BASED ON A TAG CONTENT -->
+                  <div class="section-qty-price">
+                    <div class="section-listing">
+                      <a class="productTitleForSorting" href="product-page-link">Loge10</a><br>
+                      <span>Row 1 | Seats : 20-25</span>
+                    </div>
+                    <div class="qty-listing">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected>3</option>
+                      </select>
+                    </div>
+                    <div class="price-listing">
+                      <span class="productPriceForSorting">$234</span>
+                    </div>
+                  </div>
+                  <div class="notes-container">
+                    <div class="instant-delivery"><i class="material-icons">check_circle</i><span class="notes-text">Instant Delivery</span></div>
+                    <div class="email-delivery"><i class="material-icons">email</i><span class="notes-text">Email Delivery</span></div>
+                    <div class="mobile-delivery"><i class="material-icons">smartphone</i><span class="notes-text">Mobile Delivery</span></div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- Map Container -->
+        <div class="map-container">
+          <div class="map">
+            <img src="img/map-garden.png" style="width:100%"/>
+          </div>
+          <div class="button-wrapper">
+            <a href="#" class="button" title="Zoom In"><i class="material-icons zoom-in">add</i></a>
+            <a href="#" class="button" title="Zoom Out"><i class="material-icons zoom-out">remove</i></a>
+            <a href="#" class="button" title="Reset Map Filters"><i class="material-icons reset">refresh</i></a>
+          </div>
+          <a class="zones-button"><span>Select by section</span><i class="material-icons zones-arrow">arrow_drop_down</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      THIS IS A DEMO
+    </div>
+
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.show-menu').on('click', function() {
+          $('.hamburger').toggle();
+          $('.keyboard').toggle();
+        });
+        $('#menu-spacer').on('click', function() {
+          var checkbox = $(this).find('input[type=checkbox]');
+          checkbox.prop("checked", !checkbox.prop("checked"));
+        });
+
+        if(!Modernizr.svg) {
+          $('img[src*="svg"]').attr('src', function () {
+            return $(this).attr('src').replace('.svg', '.png');
+          });
+        };
+      });
+      $(document).foundation();
+    </script>
+  </body>
+</html>

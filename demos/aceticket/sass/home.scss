@@ -1,0 +1,311 @@
+@import 'compass';
+@import '_mixin.scss';
+@import "compass/css3";
+
+#home-overflow {
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+    min-height: 700px;
+    @media only screen and (max-width: 64.063em) {
+        overflow: visible;
+        min-height: initial;
+        height: initial;
+    }
+}
+.overflow-container {
+  position: relative;
+  height: 80%;
+  @media only screen and (max-width: 40.063em) {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+  }
+}
+.headline-container {
+  position: absolute;
+  height: 300px;
+  /* margin: auto; */
+  top: 25%;
+  /* bottom: 0; */
+  left: 10%;
+  max-width: 1200px;
+  margin: auto;
+  right: 0;
+  h3 {
+    color: #fff;
+    text-shadow: 3px 3px 3px #333;
+    font-size: 4.2em;
+    padding: 0;
+    margin: 16px 0;
+    font-family: 'Oswald', sans-serif;
+  }
+  @media only screen and (max-width: 40.063em) {
+    order: 2;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 220px;
+    text-align: center;
+    h3 {
+      font-size: 38px;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+}
+.venue {
+  background-color: rgba(0, 0, 0, .55);
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+  @media only screen and (max-width: 40.063em) {
+    font-size: 18px;
+  }
+}
+.home-find-tickets {
+  border: solid 3px #fff;
+  background: #d00;
+  display: block;
+  width: 214px;
+  font-size: 24px;
+  text-align: center;
+  padding: 13px;
+  color: #fff;
+  margin: 28px 0;
+  @media only screen and (max-width: 40.063em) {
+    font-size: 16px;
+    margin: 16px auto;
+    padding: 8px;
+    width: 160px;
+  }
+}
+.img-container {
+  img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 40.063em) {
+    order: 1;
+  }
+}
+/* For when at top scroll
+#home-overflow {
+    // height: 90%;
+    overflow: hidden;
+    // position: relative;
+    min-height: 700px;
+}*/
+.home {
+    position: absolute;
+    background: rgba(34, 34, 34, 0.85);
+    z-index: 101;
+    @media only screen and (max-width: 40.063em) {
+        position: relative;
+    }
+}
+.bottom-home-bar {
+    height: 160px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    border-top: solid 2px #525d64;
+    border-bottom: solid 2px #525d64;
+    @media only screen and (max-width: 40.063em) {
+        position: relative;
+        height: initial;
+        overflow-x: scroll;
+        padding: 6px 0;
+    }
+    @media only screen and (max-width: 64.063em) {
+        background-color: rgba(0, 0, 0, 0.95);
+        position: relative;
+    }
+}
+/* For use when at top scroll
+
+    .bottom-home-bar {
+        height: 160px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        border-top: solid 2px #525d64;
+        border-bottom: solid 2px #525d64;
+    }
+
+
+
+*/
+.bottom-home-bar-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1285px;
+    margin: 0 auto;
+    align-items: stretch;
+    height: 100%;
+    .bottom-column {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      align-self: center;
+      margin: 6px;
+      a {
+        display: block;
+        color: #fff;
+        span {
+          display: block;
+        }
+      }
+      @media only screen and (max-width: 40.063em) {
+        margin: 4px;
+      }
+    }
+    @media only screen and (max-width: 40.063em) {
+      width: 240%;
+      overflow-x: scroll;
+    }
+}
+
+.below-fold-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  width: 100%;
+  max-width: 1285px;
+  margin: 30px auto;
+  .column {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    ms-flex: 1;
+    flex: 1;
+    margin: 8px;
+    padding: 0;
+    border: solid 1px #dedede;
+    border-left: solid 4px #dedede;
+    @media only screen and (max-width: 40.063em) {
+      margin: 4px;
+    }
+  }
+  .heading {
+    text-align: left;
+    font-size: 1.25em;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: solid 1px #dedede;
+    padding: 12px 5px 12px;
+    @media only screen and (max-width: 40.063em) {
+      padding: 12px 15px 12px;
+    }
+  }
+  @media only screen and (max-width: 40.063em) {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+}
+
+
+.label-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: solid 1px #dedede;
+  .flex-day,
+  .flex-event {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    ms-flex: 1;
+    flex: 1;
+  }
+}
+.label-flex:last-of-type {
+  border-bottom: none;
+}
+.flex-day {
+  max-width: 135px;
+  border-right: solid 1px #dedede;
+  color: #666;
+  background-color: #f7f7f7;
+  align-items: center;
+  width: 100%;
+  @media only screen and (max-width: 40.063em) {
+    max-width: 90px;
+  }
+}
+.new-faux-table {
+  display: table;
+  width: 100% !important;
+  min-height: 100px;
+}
+.new-faux-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+span.day-checkout {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+span.month-checkout {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+.flex-event {
+  min-width: 320px;
+  max-width: 500px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  width: 100%;
+  @media only screen and (max-width: 40.063em) {
+    min-width: inherit;
+    max-width: inherit;
+  }
+  span {
+    display: block;
+    text-transform: uppercase;
+    color: #333;
+  }
+  .event-name {
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .event-details {
+    font-weight: 300;
+    color: #777;
+    a {
+        color: #d00;
+    }
+    @media only screen and (max-width: 40.063em) {
+      font-size: 14px;
+    }
+  }
+}

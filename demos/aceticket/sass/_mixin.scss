@@ -1,0 +1,70 @@
+$LightRed: #d00;
+$DarkRed: #b81f24;
+$LightBlue: #428bca;
+$DarkBlue: #002b60;
+$NewBlue: #075383;
+$DarkGrey: #4b525e;
+$TextShadow: #333 0 1px 3px;
+
+@mixin rounded-corners {
+    $rounded-corner-radius: 3px;
+    -webkit-border-radius: $rounded-corner-radius;
+    -moz-border-radius: $rounded-corner-radius;
+    -ms-border-radius: $rounded-corner-radius;
+    border-radius: $rounded-corner-radius;
+}
+
+@mixin breakpoint($point) {
+  @if $point == iPad {
+    @media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) { @content; }
+  }
+}
+
+@mixin RedBtn {
+    // needs latest Compass, add '@import "compass"' to your scss
+    color: #fff !important; 
+    background-color: rgb(233,34,44); // Old browsers
+    @include filter-gradient(#e9222c, #ad2229, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  rgba(233,34,44,1) 0%,rgba(202,34,42,1) 52%,rgba(173,34,41,1) 100%));
+    border: none;
+}
+@mixin RedBtnHover {
+    text-decoration: none;
+    cursor: pointer;
+    $inset-shadow: inset 0 0 10px #333;
+    -moz-box-shadow: $inset-shadow;
+    -webkit-box-shadow: $inset-shadow;
+    box-shadow: $inset-shadow;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: rgb(233,34,44); // Old browsers
+    @include filter-gradient(#e9222c, #ad2229, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  rgba(233,34,44,1) 0%,rgba(221,17,38,1) 27%,rgba(183,31,33,1) 76%,rgba(173,34,41,1) 100%));
+}
+@mixin BlackBtn {
+    // needs latest Compass, add '@import "compass"' to your scss
+    color: #fff !important; 
+    border: none;
+    background-color: rgb(94,94,94); // Old browsers
+    @include filter-gradient(#5e5e5e, #333333, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  rgba(94,94,94,1) 0%,rgba(61,61,61,1) 50%,rgba(51,51,51,1) 100%));
+}
+@mixin GreyBtn {
+    // needs latest Compass, add '@import "compass"' to your scss
+    color: #333;
+    border: 1px solid #bbb;
+    background-color: rgb(255,255,255); // Old browsers
+    @include filter-gradient(#ffffff, #e5e5e5, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,234,234,1) 50%,rgba(229,229,229,1) 100%));
+}
+@mixin GreyBorder {
+    border: 1px solid #dedede;
+    border-left: solid 4px #dedede;
+}

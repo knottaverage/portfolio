@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+
+	<path opacity="0.2" fill="#fff" d="M25,50C11.215,50,0,38.785,0,25C0,11.215,11.215,0,25,0s25,11.215,25,25C50,38.785,38.785,50,25,50z
+		 M25,5.357C14.169,5.357,5.357,14.169,5.357,25S14.169,44.643,25,44.643S44.643,35.83,44.643,25S35.831,5.357,25,5.357z"/>
+
+
+	<path fill="#333" d="M31.045,6.318c5.491,1.782,9.927,5.916,12.114,11.213l5.239-1.325C45.687,9.014,39.753,3.39,32.362,1.107
+		L31.045,6.318z">
+        <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 25 25"
+      to="360 25 25"
+      dur="0.6s"
+      repeatCount="indefinite"/>
+    </path>
+
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>document-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="document-outline" fill="#000000">
+            <g id="Group">
+                <path d="M1.32167832,0 C0.594755245,0 0,0.587130178 0,1.30473373 L0,19.5710059 C0,20.2886095 0.594755245,20.8757396 1.32167832,20.8757396 L15.8601399,20.8757396 C16.5870629,20.8757396 17.1818182,20.2886095 17.1818182,19.5710059 L17.1818182,3.62063609 L13.1506993,0 L1.32167832,0 Z M13.5472028,2.12019231 L14.8027972,3.26183432 L13.5472028,3.26183432 L13.5472028,2.12019231 L13.5472028,2.12019231 Z M1.32167832,19.5710059 L1.32167832,1.30473373 L12.2255245,1.30473373 L12.2255245,4.56656805 L15.8601399,4.56656805 L15.8601399,19.5710059 L1.32167832,19.5710059 L1.32167832,19.5710059 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="2.64335664" y="3.26183432" width="8.26048951" height="1.30473373"></rect>
+                <rect id="Rectangle-path" x="2.64335664" y="9.13313609" width="11.8951049" height="1.30473373"></rect>
+                <rect id="Rectangle-path" x="2.64335664" y="11.7426036" width="11.8951049" height="1.30473373"></rect>
+                <rect id="Rectangle-path" x="2.64335664" y="14.352071" width="11.8951049" height="1.30473373"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

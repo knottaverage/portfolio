@@ -1,0 +1,9 @@
+<div class="recent-post__background">
+  <div class="recent-post__header">Recent note</div>
+{% if page.title %}
+    <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+{% endif %}
+{% if post.title %}
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+{% endif %}
+</div>

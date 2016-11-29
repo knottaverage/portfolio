@@ -1,0 +1,30 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  {% include nav.html %}
+  <div class="post-container">
+    <div class="post-container__col-1">
+      {% for post in site.posts %}
+        <div style="background: url({{ post.hero }});" class="main-post-col">
+          <div class ="posts-container__heading-overlay">
+            <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="side-archive-container">
+      <p class="side-archive-container__heading">Notes archive</p>
+      <p>More notes coming soon.</p>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>

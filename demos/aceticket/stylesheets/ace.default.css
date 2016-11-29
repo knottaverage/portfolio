@@ -1,0 +1,117 @@
+/* line 4, ../sass/ace.default.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/ace.default.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../sass/ace.default.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 22, ../sass/ace.default.scss */
+*, h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/* line 28, ../sass/ace.default.scss */
+::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+/* line 32, ../sass/ace.default.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #9e9e9e;
+}
+
+/* line 36, ../sass/ace.default.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9e9e9e;
+}
+
+/* line 40, ../sass/ace.default.scss */
+:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+/* line 44, ../sass/ace.default.scss */
+p {
+  font-size: 1.1em;
+}
+
+/* line 48, ../sass/ace.default.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 54, ../sass/ace.default.scss */
+.table {
+  display: table;
+}
+/* line 56, ../sass/ace.default.scss */
+.table .td {
+  display: table-cell;
+}
+/* line 59, ../sass/ace.default.scss */
+.table .b {
+  vertical-align: bottom;
+}
+/* line 62, ../sass/ace.default.scss */
+.table .m {
+  vertical-align: middle;
+}
+/* line 65, ../sass/ace.default.scss */
+.table .t {
+  vertical-align: top;
+}
+
+/* line 74, ../sass/ace.default.scss */
+#toggleMenu, #menuOut {
+  display: none;
+}
+
+/* line 77, ../sass/ace.default.scss */
+.selected {
+  background-color: #0094b4;
+}
+
+/* line 81, ../sass/ace.default.scss */
+h1 {
+  margin-top: 70px;
+  font-size: 4em;
+}
+
+/* line 88, ../sass/ace.default.scss */
+.footer {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 50px 0;
+}
+
+/* ====================
+
+    Tablets
+
+==================== */
+/* ====================
+
+    Smartphones
+
+==================== */
