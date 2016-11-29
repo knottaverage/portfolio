@@ -4,23 +4,30 @@
 {% include head.html %}
 
 <body>
-  {% include nav.html %}
-  <div class="post-container">
-    <div class="post-container__col-1">
-      <div class="post-container__content">
-        <div style="background: url({{ page.hero }});" class="hero-image">
-          <div class="post-container__heading-overlay">
+  <div class="body-container">
+    <div class="body-container__left-column">
+      <div class="logo-container">
+    		<a href="/">
+          <span class="logo-container__bold">Knottaverage's</span>
+          <span class="logo-container__subtext">pixels and pencils.</span>
+        </a>
+    	</div>
+      {% include nav.html %}
+    </div>
+    <div class="body-container__right-column">
+      <div class="basic-container--animate">
+        <div class="basic-container post-container">
+          <div class="basic-container__top-knot"></div>
+          <div style="background: url({{ page.hero }}); height: 300px; width: 100%;">
             <h2>{{ page.title }}</h2>
+          </div>
+          <div class="post-container__content">
+            {{ content }}
           </div>
         </div>
       </div>
     </div>
-    <div class="side-archive-container">
-      <p class="side-archive-container__heading">Notes archive</p>
-      <p>More notes coming soon.</p>
-    </div>
   </div>
-  {% include footer.html %}
 </body>
-
+  {% include analytics.html %}
 </html>
