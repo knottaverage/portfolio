@@ -539,7 +539,6 @@ h1, h2, h3 {
   padding: 4rem;
 }
 .profile__header {
-  @include flexbox;
 }
 .profile__avatar {
   width: 100px;
@@ -589,9 +588,10 @@ h1, h2, h3 {
     font-family: $sans-serif;
     border: solid 1px #dadada;
   }
-  width: 500px;
+  max-width: 500px;
   padding: 1rem;
   margin: 0 auto;
+  width: 100%;
   .button {
     padding: 0.75rem 1rem 0.5rem;
     font-size: 18px;
