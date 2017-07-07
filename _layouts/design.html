@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="body-container">
+    <div class="body-container__left-column">
+      <div class="logo-container">
+    		<a href="/">
+          <span class="logo-container__bold">Knottaverage's</span>
+          <span class="logo-container__subtext">pixels and pencils.</span>
+        </a>
+    	</div>
+      {% include nav.html %}
+    </div>
+    <div class="body-container__right-column">
+      {{content}}
+    </div>
+    {% include design_nav.html %}
+  </div>
+</body>
+  {% include analytics.html %}
+</html>

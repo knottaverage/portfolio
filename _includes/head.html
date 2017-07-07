@@ -2,12 +2,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta description="{{ site.description }}" />
 	<link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/modaal.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Lato|Lora|EB+Garamond" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt" rel="stylesheet">
+	<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/modernizr-custom.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/basic.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/modaal.js" | prepend: site.baseurl }}"></script>
 </head>

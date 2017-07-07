@@ -1,0 +1,37 @@
+---
+  layout: new__designs
+  title: Contact, Stephen Knott
+  permalink: /contact/
+---
+<div>
+  <div class="header__wrapper">
+    <h1>Contact Me</h1>
+    <p>Please use the form below to get the conversation started.</p>
+  </div>
+</div>
+<div class="contact-container">
+  <form action="https://getsimpleform.com/messages?form_api_token=1311b9c44f7242816d1729e5f8f9957e" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='redirect_to' value='http://knottaverage.com/thank-you/' />
+    <!-- all your input fields here.... -->
+    <div class="input-container">
+      <label>Full Name</label>
+      <input type="text" name="fullname" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Email</label>
+      <input type="email" name="email" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Phone</label>
+      <input type="number" name="phone" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Message</label>
+      <textarea name="message" type="text" class="text-input" id="message" rows="10"></textarea>
+    </div>
+    <div>
+      <input type='submit' value='Contact Me' class="button button--purple" />
+    </div>
+  </form>
+</div>

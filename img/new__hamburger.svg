@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="23px" viewBox="0 0 28 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy" transform="translate(-1304.000000, -67.000000)" fill="#FFFFFF">
+            <g id="Menu" transform="translate(1214.000000, 54.000000)">
+                <g id="hamburger" transform="translate(90.000000, 13.000000)">
+                    <rect id="Rectangle-3" x="0" y="0" width="28" height="3" rx="1.5"></rect>
+                    <rect id="Rectangle-3" x="0" y="10" width="28" height="3" rx="1.5"></rect>
+                    <rect id="Rectangle-3" x="0" y="20" width="28" height="3" rx="1.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

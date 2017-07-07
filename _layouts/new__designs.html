@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  {% include new-nav.html %}
+  {{content}}
+  {% include footer.html %}
+  {% if page.url != "/designs/"%}
+    <div class="portfolio-back">
+      <a href="{{ "/designs/" | prepend: site.baseurl }}">Back to Portfolio</a>
+    </div>
+  {% endif %}
+</body>
+  {% include analytics.html %}
+</html>
