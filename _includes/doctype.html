@@ -1,0 +1,16 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta description="{{ site.description }}" />
+	<link rel="stylesheet" href="{{ "/css/default.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Josefin+Sans:400,600" rel="stylesheet">
+	<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/modernizr-custom.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/base.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/modaal.js" | prepend: site.baseurl }}"></script>
+	<meta name="google-site-verification" content="5BWzNAGHFnlogtEtAHS5DoGgMlZmnk3VCAQ3j9t5kms" />
+</head>

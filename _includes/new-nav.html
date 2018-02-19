@@ -1,20 +1,86 @@
-<div class="new__logo-container animated fadeIn">
-  <a href="{{ "/" | prepend: site.baseurl }}"><img src="../img/logo.svg" /></a>
-</div>
-<nav role="navigation" class="">
-  <div class="new__menu-button">
-    <span>Menu</span>
-    <span>
-      <img src="../img/new__hamburger--purple.svg"/>
-    </span>
-  </div>
-  <ul class="new__nav">
-    <li><a href="{{ "/" | prepend: site.baseurl }}" {% if page.url == "/"%}class="active"{% endif %}>Home</a></li>
-    <li><a href="{{ "/designs/" | prepend: site.baseurl }}" {% if page.url == "/designs/"%}class="active"{% endif %}>Portfolio</a></li>
-    <li><a href="{{ "/snippets/" | prepend: site.baseurl }}" {% if page.url == "/snippets/"%}class="active"{% endif %}>Snippets</a></li>
+<nav role="navigation" class="mobile-nav">
+  <label for="show-menu" class="nav__open-button">Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul class="menu">
+		<li>
+			<div>
+				<label for="show-menu" class="show-menu close-menu">
+					<input type="checkbox" id="show-menu" role="button">
+					<div class="nav__close-button">Close</span>
+				</label>
+			</div>
+		</li>
+    <li><a href="{{ "/" | prepend: site.baseurl }}" {% if page.url == "/"%}class="active"{% endif %}>Bio</a></li>
+    <li><a href="{{ "/designs/" | prepend: site.baseurl }}" {% if page.url == "/designs/"%}class="active"{% endif %}>Design</a></li>
+    <li><a href="{{ "/code-snippets/" | prepend: site.baseurl }}" {% if page.url == "/code-snippets/"%}class="active"{% endif %}>Snippets</a></li>
     <li><a href="{{ "/contact/" | prepend: site.baseurl }}" {% if page.url == "/contact/"%}class="active"{% endif %}>Contact</a></li>
-    <li class="new__close-button">
-      <span><img src="../img/new__close-button.svg"/></span>
-    </li>
+    <!--<li><a href="{{ "/notes/" | prepend: site.baseurl }}">Notes</a></li>-->
+    <div class="subnav">
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="{{site.baseurl}}/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
+          <span class="tooltiptext">LinkedIn</span>
+        </span>
+      </a>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="{{site.baseurl}}/img/github.svg" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </span>
+      </a>
+      <a href="http://codepen.io/knottaverage/" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="{{site.baseurl}}/img/codepen.svg" alt="Codepen" />
+          <span class="tooltiptext">Codepen</span>
+        </span>
+      </a>
+      <a href="http://www.knottaverage.com/downloads/StephenKnottUXDesignresume.pdf" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="{{site.baseurl}}/img/document-icon.svg" alt="Resume" />
+          <span class="tooltiptext">Resume</span>
+        </span>
+      </a>
+    </div>
+    <div class="contact">
+      This website is built with Jekyll and hosted on Github.
+    </div>
+    <div>
   </ul>
 </nav>
+
+<!--
+<nav class="nav clear" role="navigation">
+	<div class="logo-container">
+		<a href="/"><span class="logo-container__bold">Knottaverage's</span> pixels and pencils.</a>
+	</div>
+  <label for="show-menu" class="nav__open-button">
+		Menu
+	</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <div class="menu">
+    <ul class="menubar">
+			<li>
+        <div>
+          <label for="show-menu" class="show-menu close-menu">
+						<input type="checkbox" id="show-menu" role="button">
+						<div class="nav__close-button">Close</span>
+					</label>
+        </div>
+      </li>
+			<li>
+				<a href="{{ "/" | prepend: site.baseurl }}">Bio</a></li>
+			</li>
+			<li>
+				<a href="{{ "/designs/" | prepend: site.baseurl }}">Design</a></li>
+			</li>
+			<li>
+				<a href="{{ "/code-snippets/" | prepend: site.baseurl }}">Snippets</a></li>
+			</li>
+			<li>
+				<a href="{{ "/notes/" | prepend: site.baseurl }}">Notes</a>
+			</li>
+			<li class="mobile-contact">knottaverage@gmail.com<br>707-494-1384</li>
+    </ul>
+  </div>
+</nav>
+-->

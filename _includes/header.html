@@ -1,0 +1,15 @@
+<div class="header_wrapper">
+  <div class="header">
+    <div class="logo_container">
+      <a href="{{ "/" | prepend: site.baseurl }}"><img src="{{site.baseurl}}/img/2018/logos/logo--purple.svg" alt="Logo Home" /></a>
+    </div>
+    <div class="nav_wrapper">
+      <ul>
+        <li><a href="{{ "/bio/" | prepend: site.baseurl }}" {% if page.url == "/bio/"%}class="active"{% endif %}>Bio</a></li>
+        <li><a href="{{ "/work/" | prepend: site.baseurl }}" {% if page.url == "/work/"%}class="active"{% endif %}>Work</a></li>
+        <li><a href="{{ "/bio/" | prepend: site.baseurl }}" {% if page.url == "/resume/"%}class="active"{% endif %}>Resum&eacute;</a></li>
+        <li><a href="{{ "/contact/" | prepend: site.baseurl }}" {% if page.url == "/contact/"%}class="active"{% endif %}>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

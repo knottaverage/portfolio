@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include doctype.html %}
+<body>
+  <div
+    {% if page.url == "/"%}class="home"{%endif%}
+    {% if page.url == "/work/"%}class="work"{% endif %}
+    {% if page.url == "/task-manager/"%}class="healthcare"{% endif %}
+    {% if page.url == "/fsg/"%}class="racing"{% endif %}
+    {% if page.url == "/ace-designs/"%}class="ace"{% endif %}
+    {% if page.url == "/quanta/"%}class="quanta"{% endif %}
+    {% if page.url == "/homehealth/"%}class="homehealth"{% endif %}
+  >
+    {% include header.html %}
+    {{content}}
+  </div>
+  {% include footer.html %}
+</body>
+  {% include analytics.html %}
+</html>

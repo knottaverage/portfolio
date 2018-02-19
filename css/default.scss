@@ -1,0 +1,622 @@
+---
+#
+---
+
+$white: #ffffff;
+$purple-200: #DBBFFF;
+$purple-400: #6336A0;
+$purple-900: darken($purple-400, 20%);
+$yellow--400: #D2A125;
+$blue--400: #026DFF;
+$crimson: 'Crimson Text', serif;
+$josefin: 'Josefin Sans', sans-serif;
+$text--dark: #444444;
+$break-small: 320px;
+$break-large: 1280px;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin inline-flex() {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin flexFlow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+@mixin flex-direction-col() {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin justifyContent($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+@mixin alignItems($align) {
+  -webkit-box-align: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 414px) {
+    @content;
+  }
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+body {
+  background: $white;
+  color: $text--dark;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.body--full-height {
+  height: 100%;
+}
+
+// Global box-sizing
+
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.clear:before,
+.clear:after {
+  content:' ';
+  display:table;
+}
+.clear:after {
+  clear:both;
+}
+.clear {
+  *zoom:1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+  h1 {
+    font-family: $crimson;
+    font-size: 3em;
+    line-height: 1em;
+    @include mobile {
+      font-size: 3em;
+    }
+  }
+  h1.white {
+    color: $white;
+    font-weight: 400;
+  }
+  h1.centered {
+    text-align: center;
+  }
+
+
+/* Button */
+.button {
+  border-radius: 100px;
+  box-shadow: 0 4px 2px 0 rgba(0,0,0,0.50);
+  display: inline-block;
+  padding: 0.75em 3em 0.5em;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.button--white {
+  background: $white;
+  color: #003C8E;
+  &:hover {
+    background: darken($blue--400, 35%);
+    color: white;
+  }
+}
+
+.home {
+  background: url('../img/2018/home-background-alt.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  min-height: 786px;
+}
+
+.work {
+  background: url('../img/2018/work-background-alt.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  min-height: 786px;
+  overflow: scroll;
+}
+
+.healthcare {
+  h2 {
+    color: #125A5A;
+  }
+  background: url('../img/2018/healthcare/background-page.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px;
+  @include tablet {
+    background-size: 135%;
+  }
+  @include mobile {
+    background-size: 165%;
+  }
+}
+
+.racing {
+  background: url('../img/2018/racing/background-page.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px;
+  @include tablet {
+    background-size: 135%;
+  }
+  @include mobile {
+    background-size: 165%;
+  }
+}
+.ace {
+  background: url('../img/2018/ace/background-page.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px;
+  @include tablet {
+    background-size: 135%;
+  }
+  @include mobile {
+    background-size: 165%;
+  }
+}
+.quanta {
+  background: url('../img/2018/quanta/background-page.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px;
+  @include tablet {
+    background-size: 135%;
+  }
+  @include mobile {
+    background-size: 165%;
+  }
+}
+.homehealth {
+  background: url('../img/2018/homehealth/background-page.png') center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px;
+  @include tablet {
+    background-size: 135%;
+  }
+  @include mobile {
+    background-size: 165%;
+  }
+}
+
+/* Header */
+
+.header_wrapper {
+  margin: 0 auto;
+  padding: 1em 1em 0 1em;
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  @include flexbox;
+  @include alignItems(center);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo_container {
+  img {
+    width: 75px;
+  }
+  @include mobile {
+    margin-right: 0.5em;
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.home_container {
+  color: $white;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1em 4em 0;
+  width: 100%;
+  @include mobile {
+    padding: 1em;
+  }
+}
+
+.highlight {
+  background: #FDE501;
+  height: 2px;
+  margin: 0 auto;
+  max-width: 14em;
+}
+
+.home_container--copy_wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 8em;
+  margin-left: 4em;
+  text-align: center;
+  @include mobile {
+    margin-top: inherit;
+    margin-left: inherit;
+  }
+}
+
+.home_container--copy_container {
+  margin: 0 auto;
+  font-size: 21px;
+}
+
+/* Navigation */
+.nav_wrapper {
+  ul {
+    @include flexbox;
+    list-style: none;
+    padding: 0;
+    li {
+      @include flex(1);
+      margin-left: 1em;
+      a.active {
+        text-decoration: underline;
+      }
+      a {
+        display: block;
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      @include mobile {
+        margin: 0 1em;
+      }
+    }
+  }
+}
+
+/* Portfolio Grid */
+
+.grid_navigation {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0 3em;
+  a {
+    color: #fff;
+  }
+}
+
+.grid_wrapper {
+  @include flexbox;
+  @include flexFlow(row wrap);
+  @include justifyContent(center);
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  .grid_cell {
+    margin: 0.25em;
+    height: 465px;
+    width: 414px;
+    margin-bottom: 2.5em;
+    .card {
+      text-align: center;
+      color: #fff;
+      h3 {
+        font-family: $crimson;
+        font-size: 1.5em;
+      }
+      .topshot {
+        position: relative;
+        width: 100%;
+        max-width: 405px;
+        top: -1em;
+        text-align: center;
+        margin: 0 auto;
+        img {
+          height: 265px;
+        }
+      }
+      .copy {
+        padding: 0 1em;
+        position: relative;
+        top: -2em;
+      }
+    }
+  }
+}
+
+.grid_cell--healthcare {
+  background: url('../img/2018/healthcare/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+.grid_cell--racing {
+  background: url('../img/2018/racing/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+.grid_cell--giving {
+  background: url('../img/2018/giving/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+.grid_cell--homehealth {
+  background: url('../img/2018/homehealth/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+.grid_cell--ace {
+  background: url('../img/2018/ace/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+.grid_cell--quanta {
+  background: url('../img/2018/quanta/background-page.png') center top no-repeat;
+  background-size: cover;
+}
+
+
+.portfolio_hero--pixel2lg  {
+  max-width: 425px;
+  margin: 0 auto;
+  img {
+    width: 100%
+  }
+  @include tablet {
+    max-width: 45%;
+  }
+  @include mobile {
+    max-width: 195px;
+  }
+}
+
+
+
+/* Portfolio 2017 */
+.css-flex {
+  @include flexbox;
+  @include justifyContent(center);
+  div {
+    margin-right: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+  @include mobile {
+    @include flex-direction-col;
+  }
+}
+
+.gray-background {
+  max-height: 840px;
+  @include mobile {
+    background-position: center center;
+  }
+}
+
+.portfolio__container--1col {
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 1006px;
+  }
+  @include mobile {
+    padding: 0.5rem;
+  };
+  h2 {
+    color: lighten($blue--400, 10%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 4rem 0 0.5rem;
+    padding-bottom: 0;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+  h2+p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+  }
+}
+.portfolio__container--1col > .css-flex {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.portfolio-description {
+  text-align: left;
+  max-width: 550px;
+  width: 100%;
+  margin: 5rem auto 3rem;
+  h2 {
+    display: block;
+    font-family: $crimson;
+  }
+  p {
+    margin-bottom: 4rem;
+    line-height: 2rem;
+  }
+  @include mobile {
+    padding: 0 1.5rem;
+  }
+}
+
+.portfolio-back {
+  font-size: 14px;
+  position: fixed;
+  right: 1rem;
+  text-align: center;
+  top: 6rem;
+  a {
+    color: $blue--400;
+    background: rgba(255, 255, 255, .7);
+    padding: 0.75rem 1rem 0.5rem;
+    border-radius: 2rem;
+    border: solid 1px #fff;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  @include mobile {
+    bottom: 1rem;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: inherit;
+  }
+}
+.profile__container {
+  border: solid 1px #979797;
+  max-width: 420px;
+  padding: 4rem;
+}
+.profile__header {
+}
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+}
+.story {
+  @include flexbox;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.story__image {
+  width: 450px;
+  img {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+.story__copy {
+  flex: 1;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #006BFF;
+  ul {
+    @include flexbox;
+    @include alignItems(center);
+    @include justifyContent(center);
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    li {
+      @include inline-flex;
+      margin-right: 1em;
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+}
+
+.hero-container {
+  display: flex;
+  height: 400px;
+  .healthcare_hero--copy {
+    flex: 1;
+  }
+  .healthcare_hero--image{
+    flex: 1;
+    background: url('../img/2018/healthcare/hero.png') center right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
